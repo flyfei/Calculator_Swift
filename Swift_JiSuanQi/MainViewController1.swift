@@ -57,7 +57,7 @@ class MainViewController: UIViewController {
     
     
     @IBAction func numAction(sender: UIButton) {
-        var tag = sender.tag - 10000
+//        var tag = sender.tag - 10000
         
         self.view.viewWithTag(10009)
         
@@ -146,7 +146,7 @@ class MainViewController: UIViewController {
                 numbers.removeLast()
             }else{
                 //清理最后一个字符
-                let aaa = advance(numbers[numbers.endIndex-1].endIndex, -1)
+                let aaa = numbers[numbers.endIndex-1].endIndex.advancedBy(-1)
                 numbers[numbers.endIndex-1] = numbers[numbers.endIndex-1].substringToIndex(aaa)
                 //如果删除后，字符串长度为0
                 if numbers[numbers.endIndex-1].isEmpty{
@@ -215,7 +215,7 @@ class MainViewController: UIViewController {
         }
         
         //判断最后一位是不是运算符
-        var lastString = numbers.last!
+        let lastString = numbers.last!
         //如果最后一个是空数据的话，删除后，重新判断
         if lastString.isEmpty{
             numbers.removeLast()
