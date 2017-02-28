@@ -7,3 +7,7 @@
 * 乘
 * 除
 
+
+
+
+![screenshot1](https://github.com/flyfei/Calculator_Swift/blob/master/screenshot/screenshot1.png)
