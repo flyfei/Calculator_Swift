@@ -9,5 +9,4 @@
 
 
 
-
-![screenshot1](https://github.com/flyfei/Calculator_Swift/blob/master/screenshot/screenshot1.png)
+<img src="https://raw.githubusercontent.com/flyfei/Calculator_Swift/master/screenshot/screenshot1.png" width="260px" />
